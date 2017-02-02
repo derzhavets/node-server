@@ -41,6 +41,10 @@ app.get('/about', (req, res) => {
   })
 })
 
+app.get('/posts', (req, res) => {
+  res.render('posts')
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Nothing works, fuck it :('
